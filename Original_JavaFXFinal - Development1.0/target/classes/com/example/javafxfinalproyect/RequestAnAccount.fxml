@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="609.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxfinalproyect.RequestAccountController">
+   <children>
+      <BorderPane prefHeight="84.0" prefWidth="700.0" style="-fx-background-color: #000080;">
+         <left>
+            <ImageView fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@Images/SheridanBanner.png" />
+               </image>
+            </ImageView>
+         </left>
+      </BorderPane>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="394.0" prefWidth="686.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label alignment="CENTER" layoutX="77.0" layoutY="112.0" prefHeight="35.0" prefWidth="662.0" style="&#10;" text="please request your account to be activated by providing the following details:" textAlignment="CENTER" textFill="#332121" wrapText="false">
+               <font>
+                  <Font name="Calibri Light" size="11.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="78.0" layoutY="77.0" prefHeight="35.0" prefWidth="662.0" style="&#10;" text="If you are a current student but have not activated your account" textAlignment="CENTER" textFill="#332121" wrapText="false">
+               <font>
+                  <Font name="Calibri Light" size="11.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="293.0" layoutY="32.0" style="&#10;" text="Request an Account" textAlignment="CENTER" textFill="#332121" wrapText="false">
+               <font>
+                  <Font name="Calibri Light" size="29.0" />
+               </font>
+            </Label>
+            <TextField fx:id="academicMail" layoutX="319.0" layoutY="181.0" prefHeight="26.0" prefWidth="179.0" />
+            <TextField fx:id="studentID" layoutX="319.0" layoutY="253.0" prefHeight="26.0" prefWidth="179.0" />
+            <Label alignment="CENTER" layoutX="356.0" layoutY="158.0" prefHeight="14.0" prefWidth="106.0" style="&#10;" text="Academic Mail" textAlignment="CENTER" textFill="#332121" wrapText="false">
+               <font>
+                  <Font name="Calibri Light" size="11.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="361.0" layoutY="227.0" prefHeight="14.0" prefWidth="96.0" style="&#10;" text="Student ID" textAlignment="CENTER" textFill="#332121" wrapText="false">
+               <font>
+                  <Font name="Calibri Light" size="11.0" />
+               </font>
+            </Label>
+            <Button fx:id="submit" layoutX="382.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleSubmission" text="Submit" />
+            <Button fx:id="goBack" layoutX="315.0" layoutY="415.0" mnemonicParsing="false" onAction="#goBackToLogin" prefHeight="26.0" prefWidth="188.0" text="Go Back" />
+            <Label fx:id="success" alignment="CENTER" layoutX="318.0" layoutY="358.0" prefHeight="35.0" prefWidth="179.0" style="&#10;" text="Submission succesfully received" textAlignment="CENTER" textFill="#2bbf52" visible="false" wrapText="false">
+               <font>
+                  <Font name="Calibri Light" size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

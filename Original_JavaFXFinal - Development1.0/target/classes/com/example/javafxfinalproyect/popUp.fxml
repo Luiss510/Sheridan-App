@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="524.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxfinalproyect.CoursePopUpController">
+   <children>
+      <BorderPane prefHeight="84.0" prefWidth="700.0" style="-fx-background-color: #000080;">
+         <left>
+            <ImageView fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@Images/SheridanBanner.png" />
+               </image>
+            </ImageView>
+         </left>
+      </BorderPane>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="430.0" prefWidth="703.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="enrollButton" disable="true" layoutX="520.0" layoutY="383.0" mnemonicParsing="false" onAction="#handleEnrollButton" prefHeight="26.0" prefWidth="55.0" text="Enroll" />
+            <Button fx:id="closeButton" layoutX="588.0" layoutY="383.0" mnemonicParsing="false" onAction="#handleCloseButton" prefHeight="26.0" prefWidth="63.0" text="Go Back" />
+            <Label fx:id="courseName" layoutX="16.0" layoutY="14.0" prefHeight="26.0" prefWidth="486.0" text="Course Name">
+               <font>
+                  <Font name="Calibri Light" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="courseCode" layoutX="16.0" layoutY="116.0" prefHeight="26.0" prefWidth="646.0" text="Course code">
+               <font>
+                  <Font name="Calibri Light" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="courseDescription2" layoutX="21.0" layoutY="170.0" prefHeight="26.0" prefWidth="215.0" text="Available Times and Profesors">
+               <font>
+                  <Font name="Calibri Light" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="error1" layoutX="19.0" layoutY="223.0" prefHeight="26.0" prefWidth="260.0" text="Scheduling Feature not available yet :[" textFill="#d92424" visible="false">
+               <font>
+                  <Font name="Calibri Light" size="16.0" />
+               </font>
+            </Label>
+            <Text fx:id="courseDescription" layoutX="16.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="466.93665313720703" />
+            <ComboBox fx:id="dropMenu" layoutX="21.0" layoutY="210.0" prefHeight="26.0" prefWidth="296.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

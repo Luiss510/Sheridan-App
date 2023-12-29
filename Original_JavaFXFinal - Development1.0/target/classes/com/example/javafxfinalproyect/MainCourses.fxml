@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="607.0" prefWidth="842.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxfinalproyect.MainTabController">
+   <children>
+      <BorderPane prefHeight="84.0" prefWidth="700.0" style="-fx-background-color: #000080;">
+         <left>
+            <ImageView fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@Images/SheridanBanner.png" />
+               </image>
+            </ImageView>
+         </left>
+      </BorderPane>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="394.0" prefWidth="686.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label fx:id="programLabel" alignment="CENTER" layoutX="-12.0" layoutY="54.0" prefHeight="26.0" prefWidth="302.0" style="&#10;" text="Program" textFill="#332121" wrapText="false">
+               <font>
+                  <Font name="Calibri Light" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="welcomeLabel" alignment="CENTER" layoutX="35.0" layoutY="14.0" style="&#10;" text="Insert" textAlignment="CENTER" textFill="#332121" wrapText="false">
+               <font>
+                  <Font name="Calibri Light" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="semesterLabel" alignment="CENTER" layoutY="80.0" prefHeight="26.0" prefWidth="266.0" style="&#10;" text="Current Semester:" textFill="#332121" wrapText="false">
+               <font>
+                  <Font name="Calibri Light" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameLabel" alignment="CENTER" layoutY="106.0" prefHeight="26.0" prefWidth="254.0" style="&#10;" text="Student ID:" textFill="#332121" wrapText="false">
+               <font>
+                  <Font name="Calibri Light" size="16.0" />
+               </font>
+            </Label>
+
+            <AnchorPane layoutY="153.0" prefHeight="311.0" prefWidth="819.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="31.0" layoutY="14.0" style="&#10;" text="Enrolled Courses" textAlignment="CENTER" textFill="#332121" wrapText="false">
+                     <font>
+                        <Font name="Calibri Light" size="29.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e3e5e7" height="100.0" layoutX="31.0" layoutY="61.0" stroke="#faefef" strokeType="INSIDE" width="254.0" />
+                  <Label fx:id="course1" alignment="CENTER" layoutX="31.0" layoutY="61.0" prefHeight="35.0" prefWidth="254.0" style="&#10;" text="Not Enrolled" textAlignment="CENTER" textFill="#332121" wrapText="false">
+                     <font>
+                        <Font name="Calibri Light" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="status1" alignment="CENTER" layoutX="39.0" layoutY="98.0" prefHeight="26.0" prefWidth="70.0" style="&#10;" text="Status: N/A" textAlignment="CENTER" textFill="#332121" wrapText="false">
+                     <font>
+                        <Font name="Calibri Light" size="11.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="details1" disable="true" layoutX="187.0" layoutY="124.0" mnemonicParsing="false" onAction="#displayDetails" text="View Details" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e3e5e7" height="100.0" layoutX="31.0" layoutY="179.0" stroke="#faefef" strokeType="INSIDE" width="254.0" />
+                  <Label fx:id="course2" alignment="CENTER" layoutX="31.0" layoutY="179.0" prefHeight="35.0" prefWidth="254.0" style="&#10;" text="Not Enrolled" textAlignment="CENTER" textFill="#332121" wrapText="false">
+                     <font>
+                        <Font name="Calibri Light" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="status2" alignment="CENTER" layoutX="39.0" layoutY="214.0" prefHeight="26.0" prefWidth="70.0" style="&#10;" text="Status: N/A" textAlignment="CENTER" textFill="#332121" wrapText="false">
+                     <font>
+                        <Font name="Calibri Light" size="11.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="details2" disable="true" layoutX="187.0" layoutY="242.0" mnemonicParsing="false" onAction="#displayDetails" text="View Details" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e3e5e7" height="100.0" layoutX="303.0" layoutY="61.0" stroke="#faefef" strokeType="INSIDE" width="254.0" />
+                  <Label fx:id="course3" alignment="CENTER" layoutX="303.0" layoutY="61.0" prefHeight="35.0" prefWidth="254.0" style="&#10;" text="Not Enrolled" textAlignment="CENTER" textFill="#332121" wrapText="false">
+                     <font>
+                        <Font name="Calibri Light" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="status3" alignment="CENTER" layoutX="318.0" layoutY="98.0" prefHeight="26.0" prefWidth="70.0" style="&#10;" text="Status: N/A" textAlignment="CENTER" textFill="#332121" wrapText="false">
+                     <font>
+                        <Font name="Calibri Light" size="11.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="details3" disable="true" layoutX="459.0" layoutY="124.0" mnemonicParsing="false" onAction="#displayDetails" text="View Details" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e3e5e7" height="100.0" layoutX="303.0" layoutY="179.0" stroke="#faefef" strokeType="INSIDE" width="254.0" />
+                  <Label fx:id="course4" alignment="CENTER" layoutX="303.0" layoutY="179.0" prefHeight="35.0" prefWidth="254.0" style="&#10;" text="Not Enrolled" textAlignment="CENTER" textFill="#332121" wrapText="false">
+                     <font>
+                        <Font name="Calibri Light" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="status4" alignment="CENTER" layoutX="318.0" layoutY="214.0" prefHeight="26.0" prefWidth="70.0" style="&#10;" text="Status: N/A" textAlignment="CENTER" textFill="#332121" wrapText="false">
+                     <font>
+                        <Font name="Calibri Light" size="11.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="details4" disable="true" layoutX="459.0" layoutY="242.0" mnemonicParsing="false" onAction="#displayDetails" text="View Details" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e3e5e7" height="100.0" layoutX="576.0" layoutY="61.0" stroke="#faefef" strokeType="INSIDE" width="254.0" />
+                  <Label fx:id="course5" alignment="CENTER" layoutX="576.0" layoutY="61.0" prefHeight="35.0" prefWidth="254.0" style="&#10;" text="Not Enrolled" textAlignment="CENTER" textFill="#332121" wrapText="false">
+                     <font>
+                        <Font name="Calibri Light" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="status5" alignment="CENTER" layoutX="591.0" layoutY="98.0" prefHeight="26.0" prefWidth="70.0" style="&#10;" text="Status: N/A" textAlignment="CENTER" textFill="#332121" wrapText="false">
+                     <font>
+                        <Font name="Calibri Light" size="11.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="details5" disable="true" layoutX="732.0" layoutY="124.0" mnemonicParsing="false" onAction="#displayDetails" text="View Details" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e3e5e7" height="100.0" layoutX="576.0" layoutY="179.0" stroke="#faefef" strokeType="INSIDE" width="254.0" />
+                  <Label fx:id="course6" alignment="CENTER" layoutX="576.0" layoutY="179.0" prefHeight="35.0" prefWidth="254.0" style="&#10;" text="Not Enrolled" textAlignment="CENTER" textFill="#332121" wrapText="false">
+                     <font>
+                        <Font name="Calibri Light" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="status6" alignment="CENTER" layoutX="591.0" layoutY="214.0" prefHeight="26.0" prefWidth="70.0" style="&#10;" text="Status: N/A" textAlignment="CENTER" textFill="#332121" wrapText="false">
+                     <font>
+                        <Font name="Calibri Light" size="11.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="details6" disable="true" layoutX="732.0" layoutY="242.0" mnemonicParsing="false" onAction="#displayDetails" text="View Details" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <left>
+            <Button fx:id="logOut" mnemonicParsing="false" onAction="#logOut" prefHeight="26.0" prefWidth="104.0" text="Log Out" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="40.0" />
+               </BorderPane.margin>
+            </Button>
+         </left>
+         <center>
+            <Button fx:id="enrollment" mnemonicParsing="false" onAction="#loadEnrollmentWindow" prefHeight="26.0" prefWidth="119.0" text="Enroll Courses" BorderPane.alignment="CENTER" />
+         </center>
+         <right>
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="111.0" text="N/A" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets right="40.0" />
+               </BorderPane.margin>
+            </Button>
+         </right>
+      </BorderPane>
+   </children>
+</VBox>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="814.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxfinalproyect.EnrollmentController">
+   <children>
+      <BorderPane prefHeight="84.0" prefWidth="700.0" style="-fx-background-color: #000080;">
+         <left>
+            <ImageView fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@Images/SheridanBanner.png" />
+               </image>
+            </ImageView>
+         </left>
+      </BorderPane>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="686.0" prefWidth="1037.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label fx:id="welcomeLabel" alignment="CENTER" layoutY="14.0" prefHeight="35.0" prefWidth="356.0" style="&#10;" text="Available courses for you" textAlignment="CENTER" textFill="#332121" wrapText="false">
+               <font>
+                  <Font name="Calibri Light" size="29.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d6dde4" height="106.0" layoutX="23.0" layoutY="62.0" stroke="#f4eded" strokeType="INSIDE" width="854.0" />
+            <Label fx:id="course1" layoutX="157.0" layoutY="75.0" prefHeight="23.0" prefWidth="486.0" text="No course found">
+               <font>
+                  <Font name="Calibri Light" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="image1" fitHeight="90.0" fitWidth="113.0" layoutX="35.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="description1" layoutX="157.0" layoutY="103.0" prefHeight="23.0" prefWidth="551.0" text="N/A">
+               <font>
+                  <Font name="Calibri Light" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="button1" layoutX="788.0" layoutY="126.0" mnemonicParsing="false" onAction="#displayCoursePopUp" text="Enroll" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d6dde4" height="106.0" layoutX="23.0" layoutY="184.0" stroke="#f4eded" strokeType="INSIDE" width="854.0" />
+            <Label fx:id="course2" layoutX="157.0" layoutY="203.0" prefHeight="23.0" prefWidth="458.0" text="No course found">
+               <font>
+                  <Font name="Calibri Light" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="image2" fitHeight="90.0" fitWidth="113.0" layoutX="35.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="description2" layoutX="157.0" layoutY="225.0" prefHeight="23.0" prefWidth="551.0" text="N/A">
+               <font>
+                  <Font name="Calibri Light" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="button2" layoutX="788.0" layoutY="248.0" mnemonicParsing="false" onAction="#displayCoursePopUp" text="Enroll" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d6dde4" height="106.0" layoutX="23.0" layoutY="304.0" stroke="#f4eded" strokeType="INSIDE" width="854.0" />
+            <Label fx:id="course3" layoutX="157.0" layoutY="321.0" prefHeight="23.0" prefWidth="516.0" text="No course found">
+               <font>
+                  <Font name="Calibri Light" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="image3" fitHeight="90.0" fitWidth="113.0" layoutX="35.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="description3" layoutX="157.0" layoutY="345.0" prefHeight="23.0" prefWidth="551.0" text="N/A">
+               <font>
+                  <Font name="Calibri Light" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="button3" layoutX="788.0" layoutY="368.0" mnemonicParsing="false" onAction="#displayCoursePopUp" text="Enroll" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d6dde4" height="106.0" layoutX="23.0" layoutY="424.0" stroke="#f4eded" strokeType="INSIDE" width="854.0" />
+            <ImageView fx:id="image4" fitHeight="90.0" fitWidth="113.0" layoutX="35.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="course4" layoutX="157.0" layoutY="441.0" prefHeight="23.0" prefWidth="516.0" text="No course found">
+               <font>
+                  <Font name="Calibri Light" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="button4" layoutX="788.0" layoutY="488.0" mnemonicParsing="false" onAction="#displayCoursePopUp" text="Enroll" />
+            <Label fx:id="description4" layoutX="157.0" layoutY="465.0" prefHeight="23.0" prefWidth="551.0" text="N/A">
+               <font>
+                  <Font name="Calibri Light" size="14.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d6dde4" height="106.0" layoutX="23.0" layoutY="543.0" stroke="#f4eded" strokeType="INSIDE" width="854.0" />
+            <Label fx:id="course5" layoutX="157.0" layoutY="560.0" prefHeight="23.0" prefWidth="516.0" text="No course found">
+               <font>
+                  <Font name="Calibri Light" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="image5" fitHeight="90.0" fitWidth="113.0" layoutX="35.0" layoutY="551.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="description5" layoutX="157.0" layoutY="584.0" prefHeight="23.0" prefWidth="551.0" text="N/A">
+               <font>
+                  <Font name="Calibri Light" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="button5" layoutX="788.0" layoutY="607.0" mnemonicParsing="false" onAction="#displayCoursePopUp" text="Enroll" />
+            <Button layoutX="614.0" layoutY="19.0" mnemonicParsing="false" onAction="#goBackToMainCourses" prefHeight="26.0" prefWidth="246.0" text="Go back" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
